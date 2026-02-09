@@ -1,19 +1,19 @@
 # GitHub Profile 3D Contrib
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 <!-- Ordem do código de idioma (exceto inglês) -->
 [English (en)](../README.md) |
 [Deutsch (de)](README.de.md) |
 [Español (es)](README.es.md) |
 [Français (fr)](README.fr.md) |
-[日本語 (ja)](README.ja.md) |
-[한국어 (ko)](README.ko.md) |
+[?�本�?(ja)](README.ja.md) |
+[?�국??(ko)](README.ko.md) |
 [Português (pt-BR)](README.pt-br.md) |
 Português (pt) |
-[Русский (ru)](README.ru.md) |
-[简体中文 (zh-CN)](README.zh-CN.md) |
-[繁體中文 (zh-TW)](README.zh-TW.md) |
+[????кий (ru)](README.ru.md) |
+[简体中??(zh-CN)](README.zh-CN.md) |
+[繁�?中�? (zh-TW)](README.zh-TW.md) |
 
 > [!NOTE]
 > Esta tradução foi gerada por tradução automática.
@@ -77,7 +77,7 @@ jobs:
 ```
 
 > [!NOTE]
-> Você pode alterar as configurações do GitHub para incluir contribuições de repositórios privados. Para alterar esta configuração, clique em `Configurações de contribuição` no canto superior direito do calendário padrão de contribuições, ou clique no seu ícone no canto superior direito da tela, selecione `Configurações` ⇒ `Perfil público` ⇒ `Contribuições & Atividade`, e marque `Incluir contribuições privadas no meu perfil`.
+> Você pode alterar as configurações do GitHub para incluir contribuições de repositórios privados. Para alterar esta configuração, clique em `Configurações de contribuição` no canto superior direito do calendário padrão de contribuições, ou clique no seu ícone no canto superior direito da tela, selecione `Configurações` ??`Perfil público` ??`Contribuições & Atividade`, e marque `Incluir contribuições privadas no meu perfil`.
 >
 > Se quiser incluir atividades adicionais de repositórios privados, registre um token de acesso pessoal como segredo e defina-o na variável de ambiente `GITHUB_TOKEN` no arquivo de workflow. No entanto, na maioria dos casos, o padrão `secrets.GITHUB_TOKEN` é suficiente.
 
@@ -125,8 +125,8 @@ Defina esse segredo como valor da variável de ambiente `GITHUB_TOKEN`.
 
 #### Sobre o horário do agendamento
 
-No exemplo, está definido para iniciar às 18:00 UTC.
-Isso porque será executado à meia-noite JST, que é o horário local do autor.
+No exemplo, está definido para iniciar ?s 18:00 UTC.
+Isso porque será executado ? meia-noite JST, que é o horário local do autor.
 
 ```yaml
 on:
@@ -165,31 +165,31 @@ Você pode usar essas imagens no seu README.md como mostrado abaixo.
 
 Exemplo: versão verde
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
 
 Exemplo: versão de estação (Hemisfério Norte.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
 
 Exemplo: versão de estação (Hemisfério Sul.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
 
 Exemplo: versão visão noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
 
 Exemplo: versão verde noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
 
 Exemplo: versão arco-íris noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
 
 Exemplo: versão git block
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 ### Passo 4. Adicione a imagem ao README.md
 

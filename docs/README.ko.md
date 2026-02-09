@@ -1,47 +1,47 @@
-# GitHub 프로필 3D 기여도
+# GitHub ?��???3D 기여??
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
-<!-- 언어 코드 순서(영어 제외) -->
+<!-- ?�어 코�? ?��?(?�어 ?�외) -->
 [English (en)](../README.md) |
 [Deutsch (de)](README.de.md) |
 [Español (es)](README.es.md) |
 [Français (fr)](README.fr.md) |
-[日本語 (ja)](README.ja.md) |
-한국어 (ko) |
+[?�本�?(ja)](README.ja.md) |
+?�국??(ko) |
 [Português (pt-BR)](README.pt-br.md) |
 [Português (pt)](README.pt.md) |
-[Русский (ru)](README.ru.md) |
-[简体中文 (zh-CN)](README.zh-CN.md) |
-[繁體中文 (zh-TW)](README.zh-TW.md) |
+[????кий (ru)](README.ru.md) |
+[简体中??(zh-CN)](README.zh-CN.md) |
+[繁�?中�? (zh-TW)](README.zh-TW.md) |
 
 > [!NOTE]
-> 이 번역은 기계 번역으로 생성되었습니다.
-> 오류나 부자연스러운 표현이 있을 수 있습니다.
-> 번역 개선에 기여해 주세요!
+> ??번역?� 기�? 번역?��? ?�성?��??��???
+> ?��???부?�연?�러???��????��? ???�습?�다.
+> 번역 개�???기여??주세??
 
-## 개요
+## 개�?
 
-이 GitHub Action은 GitHub 기여도 캘린더를 3D 프로필 이미지로 생성합니다.
+??GitHub Action?� GitHub 기여??캘린?�를 3D ?��????�미지�??�성?��???
 
-## 사용 방법 (GitHub Actions) - 기본
+## ?�용 방�? (GitHub Actions) - 기본
 
-이 GitHub Action은 GitHub 프로필 3D 기여도 캘린더를 생성하여 저장소에 커밋합니다.
-GitHub Action을 추가하면 워크플로우가 하루에 한 번 자동으로 실행됩니다.
-수동으로 워크플로우를 트리거할 수도 있습니다.
+??GitHub Action?� GitHub ?��???3D 기여??캘린?�를 ?�성?�여 ?�?��???커�??��???
+GitHub Action??추�??�면 ?�크?��??��? ?�루????�??��??��? ?��??��???
+?��??��? ?�크?��??�를 ?�리거�? ?��? ?�습?�다.
 
-### 1단계. 특별 프로필 저장소 생성
+### 1?��?. ?��? ?��????�?��? ?�성
 
-GitHub에서 사용자 이름과 동일한 이름의 저장소를 생성하세요.
+GitHub?��? ?�용???��?�??�일???��????�?��?�??�성?�세??
 
-- 예를 들어, 사용자 이름이 `octocat`이면 `octocat/octocat` 저장소를 생성합니다.
-- 참고: [프로필 추가 정보 관리](https://docs.github.com/ko/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+- ?�를 ?�어, ?�용???��???`octocat`?�면 `octocat/octocat` ?�?��?�??�성?��???
+- 참�?: [?��???추�? ?�보 관리](https://docs.github.com/ko/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 
-이 저장소에서 아래 단계를 따르세요.
+???�?��??��? ?��? ?��?�??�르?��?.
 
-### 2단계. 워크플로우 파일 생성
+### 2?��?. ?�크?��????�일 ?�성
 
-아래와 같은 워크플로우 파일을 생성하세요.
+?��??� 같�? ?�크?��????�일???�성?�세??
 
 - `.github/workflows/profile-3d.yml`
 
@@ -77,44 +77,44 @@ jobs:
 ```
 
 > [!NOTE]
-> GitHub 설정에서 비공개 저장소의 기여도를 포함하도록 변경할 수 있습니다. 이 설정을 변경하려면 표준 기여도 캘린더 오른쪽 상단의 `Contribution settings`를 클릭하거나 화면 오른쪽 상단의 아이콘을 클릭 후 `Settings` ⇒ `Public profile` ⇒ `Contributions & Activity`에서 `Include private contributions on my profile`을 체크하세요.
+> GitHub ?��??��? 비공�??�?��???기여?�를 ?�함?��?�?변경�? ???�습?�다. ???��???변경�??�면 ?��? 기여??캘린???�른�??�단??`Contribution settings`�??�릭?�거???�면 ?�른�??�단???�이콘�? ?�릭 ??`Settings` ??`Public profile` ??`Contributions & Activity`?��? `Include private contributions on my profile`??체크?�세??
 >
-> 비공개 저장소의 추가 활동을 포함하려면 개인 액세스 토큰을 시크릿으로 등록하고 워크플로우 파일의 `GITHUB_TOKEN` 환경 변수에 설정하세요. 대부분의 경우 기본 `secrets.GITHUB_TOKEN`이면 충분합니다.
+> 비공�??�?��???추�? ?��????�함?�려�?개인 ?�세???�큰???�크릿으�??��??��? ?�크?��????�일??`GITHUB_TOKEN` ?�경 변?��? ?��??�세?? ?�부분�? 경우 기본 `secrets.GITHUB_TOKEN`?�면 충�??��???
 
-기본적으로 하루에 한 번 실행되도록 예약되어 있습니다.
-원하는 시간으로 예약 시간을 변경할 수 있습니다.
+기본?�으�??�루????�??��??��?�??�약?�어 ?�습?�다.
+?��????��??��? ?�약 ?��???변경�? ???�습?�다.
 
-이렇게 하면 워크플로우가 저장소에 추가됩니다.
+?��?�??�면 ?�크?��??��? ?�?��???추�??��???
 
-#### 환경 변수
+#### ?�경 변??
 
-샘플에서는 `GITHUB_TOKEN`과 `USERNAME`만 환경 변수로 지정되어 있지만, 다음 환경 변수를 지정할 수 있습니다:
+?��??��???`GITHUB_TOKEN`�?`USERNAME`�??�경 변?��? 지?��????��?�? ?��? ?�경 변?�를 지?��? ???�습?�다:
 
-- `GITHUB_TOKEN` : (필수) 액세스 토큰
-- `USERNAME` : (필수) 대상 사용자 이름 (또는 인수로 지정)
-- `MAX_REPOS` : (선택) 최대 저장소 수, 기본값 100 - ver. 0.2.0부터
-- `SETTING_JSON` : (선택) 설정 json 파일 경로. 자세한 내용은 `sample-settings/*.json` 및 `src/type.ts`를 참고하세요. - ver. 0.6.0부터
-- `GITHUB_ENDPOINT` : (선택) Github GraphQL 엔드포인트. 예를 들어, 회사의 GitHub Enterprise 활동을 기반으로 기여도 캘린더를 만들고 싶다면 이 환경 변수를 설정하세요. 예: `https://github.mycompany.com/api/graphql` - ver. 0.8.0부터
-- `YEAR` : (선택) 과거 캘린더를 위해 연도를 지정하세요. 커맨드라인에서 도구를 실행할 때 지정합니다. - ver. 0.8.0부터
+- `GITHUB_TOKEN` : (?��?) ?�세???�큰
+- `USERNAME` : (?��?) ?�???�용???��? (?��? ?��?�?지??
+- `MAX_REPOS` : (?��?) 최�? ?�?��? ?? 기본�?100 - ver. 0.2.0부??
+- `SETTING_JSON` : (?��?) ?��? json ?�일 경�?. ?�세???�용?� `sample-settings/*.json` �?`src/type.ts`�?참�??�세?? - ver. 0.6.0부??
+- `GITHUB_ENDPOINT` : (?��?) Github GraphQL ?��??�인?? ?�를 ?�어, ?�사??GitHub Enterprise ?��???기�??��? 기여??캘린?�를 만들�??�다�????�경 변?�를 ?��??�세?? ?? `https://github.mycompany.com/api/graphql` - ver. 0.8.0부??
+- `YEAR` : (?��?) 과거 캘린?�를 ?�해 ?��?�?지?��??��?. 커맨?�라?��????�구�??��?????지?�합?�다. - ver. 0.8.0부??
 
-#### `GITHUB_TOKEN`에 대하여
+#### `GITHUB_TOKEN`???�?�여
 
-샘플에서 `GITHUB_TOKEN` 환경 변수에 설정된 `secrets.GITHUB_TOKEN`은 GitHub에서 자동으로 생성되는 특별한 액세스 토큰입니다.
+?��??��? `GITHUB_TOKEN` ?�경 변?��? ?��???`secrets.GITHUB_TOKEN`?� GitHub?��? ?��??��? ?�성?��? ?��????�세???�큰?��???
 
-- GitHub Docs: [워크플로에서 인증에 GITHUB_TOKEN 사용](https://docs.github.com/ko/actions/tutorials/authenticate-with-github_token)
+- GitHub Docs: [?�크?��??��? ?��???GITHUB_TOKEN ?�용](https://docs.github.com/ko/actions/tutorials/authenticate-with-github_token)
 
-공개 저장소만을 위한 기여도 캘린더를 생성하려면 이 값을 사용하세요.
-별도의 시크릿을 만들 필요가 없습니다.
+공�? ?�?��?만�? ?��? 기여??캘린?�를 ?�성?�려�???값�? ?�용?�세??
+별�????�크릿�? 만들 ?��?가 ?�습?�다.
 
-또한, 비공개 저장소의 활동을 기여도 캘린더에 포함하려면 프로필 설정의 "Public profile" 섹션에서 "Include private contributions on my profile"을 체크하세요.
+?��?, 비공�??�?��????��???기여??캘린?��? ?�함?�려�??��????��???"Public profile" ?��??��? "Include private contributions on my profile"??체크?�세??
 
-추가적인 비공개 저장소 활동 정보를 포함하려면 적절한 권한의 액세스 토큰을 생성하세요.
-해당 액세스 토큰을 원하는 이름의 시크릿(예: `MY_PERSONAL_ACCESS_TOKEN`)으로 등록하세요.
-단, 사용자가 만든 시크릿은 `GITHUB_`로 시작할 수 없습니다.
+추�??�인 비공�??�?��? ?��? ?�보�??�함?�려�??��???권�????�세???�큰???�성?�세??
+?�당 ?�세???�큰???��????��????�크�??? `MY_PERSONAL_ACCESS_TOKEN`)?��? ?��??�세??
+?? ?�용?��? 만�? ?�크릿�? `GITHUB_`�??��??????�습?�다.
 
-- GitHub Docs: [비밀](https://docs.github.com/ko/actions/concepts/security/secrets)
+- GitHub Docs: [비�?](https://docs.github.com/ko/actions/concepts/security/secrets)
 
-해당 시크릿을 `GITHUB_TOKEN` 환경 변수 값으로 설정하세요.
+?�당 ?�크릿�? `GITHUB_TOKEN` ?�경 변??값으�??��??�세??
 
 ```diff
           env:
@@ -123,10 +123,10 @@ jobs:
             USERNAME: ${{ github.repository_owner }}
 ```
 
-#### 예약 시간에 대하여
+#### ?�약 ?��????�?�여
 
-샘플에서는 18:00 UTC에 시작하도록 설정되어 있습니다.
-이는 작성자의 현지 시간인 자정(JST)에 실행되도록 하기 위함입니다.
+?��??��???18:00 UTC???��??��?�??��??�어 ?�습?�다.
+?��? ?�성?��? ?��? ?��????��?(JST)???��??��?�??�기 ?�함?��???
 
 ```yaml
 on:
@@ -134,17 +134,17 @@ on:
     - cron: "0 18 * * *"
 ```
 
-원하는 시간으로 변경할 수 있습니다.
-현지 시간 기준 자정(오전 3시경)을 추천합니다.
-단, 시간은 반드시 UTC로 지정해야 합니다.
+?��????��??��? 변경�? ???�습?�다.
+?��? ?��? 기�? ?��?(?��? 3?�경)??추�??��???
+?? ?��??� 반�???UTC�?지?�해???��???
 
-### 3단계. GitHub Action 수동 실행
+### 3?��?. GitHub Action ?��? ?��?
 
-처음에는 워크플로우를 수동으로 실행하세요.
+처�??��? ?�크?��??�를 ?��??��? ?��??�세??
 
 - `Actions` -> `GitHub-Profile-3D-Contrib` -> `Run workflow`
 
-프로필 이미지는 다음 경로에 생성됩니다:
+?��????�미지???��? 경�????�성?��???
 
 - `profile-3d-contrib/profile-green-animate.svg`
 - `profile-3d-contrib/profile-green.svg`
@@ -157,75 +157,75 @@ on:
 - `profile-3d-contrib/profile-night-rainbow.svg`
 - `profile-3d-contrib/profile-gitblock.svg`
 
-`SETTING_JSON` 환경 변수를 지정하고 json 파일에 `fileName` 속성이 없으면 다음 이미지가 생성됩니다:
+`SETTING_JSON` ?�경 변?�를 지?��?�?json ?�일??`fileName` ?�성???�으�??��? ?�미지가 ?�성?��???
 
 - `profile-3d-contrib/profile-customize.svg`
 
-아래와 같이 README.md에 이미지를 사용할 수 있습니다.
+?��??� 같이 README.md???�미지�??�용?????�습?�다.
 
-예시: green 버전
+?��?: green 버�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
 
-예시: season 버전 (북반구)
+?��?: season 버�? (북�?�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
 
-예시: season 버전 (남반구)
+?��?: season 버�? (?��?�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
 
-예시: night view 버전
+?��?: night view 버�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
 
-예시: night green 버전
+?��?: night green 버�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
 
-예시: night rainbow 버전
+?��?: night rainbow 버�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
 
-예시: git block 버전
+?��?: git block 버�?
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
-### 4단계. README.md에 이미지 추가
+### 4?��?. README.md???�미지 추�?
 
-생성된 이미지의 경로를 README 파일에 추가하세요.
+?�성???�미지??경�?�?README ?�일??추�??�세??
 
-예시:
+?��?:
 
 ```md
 ![](./profile-3d-contrib/profile-green-animate.svg)
 ```
 
-## 사용 방법 (GitHub Actions) - 고급 예시
+## ?�용 방�? (GitHub Actions) - 고�? ?��?
 
-- [자세한 내용은 EXAMPLES.md 참고](../EXAMPLES.md)
+- [?�세???�용?� EXAMPLES.md 참�?](../EXAMPLES.md)
 
-## 사용 방법 (로컬)
+## ?�용 방�? (로컬)
 
-`GITHUB_TOKEN` 환경 변수에 개인 액세스 토큰을 설정하세요.
+`GITHUB_TOKEN` ?�경 변?��? 개인 ?�세???�큰???��??�세??
 
 ```sh
 export GITHUB_TOKEN=XXXXXXXXXXXXXXXXXXXXX
 ```
 
-아래 명령어를 실행하세요. `USER_NAME`을 GitHub 사용자 이름 또는 대상 사용자 이름으로 변경하세요.
+?��? 명령?�를 ?��??�세?? `USER_NAME`??GitHub ?�용???��? ?��? ?�???�용???��??��? 변경�??��?.
 
 ```sh
 node_modules/.bin/ts-node src/index.ts USER_NAME
 ```
 
-또는
+?��?
 
 ```sh
 npm run build
 node . USER_NAME
 ```
 
-## 라이선스
+## ?�이?�스
 
-&copy; 2021 SATO Yoshiyuki. MIT 라이선스 하에 제공됩니다.
+&copy; 2021 SATO Yoshiyuki. MIT ?�이?�스 ?��? ?�공?��???

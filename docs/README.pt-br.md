@@ -1,25 +1,25 @@
 # GitHub Profile 3D Contrib
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 <!-- Ordem do código de idioma (exceto inglês) -->
 [English (en)](../README.md) |
 [Deutsch (de)](README.de.md) |
 [Español (es)](README.es.md) |
 [Français (fr)](README.fr.md) |
-[日本語 (ja)](README.ja.md) |
-[한국어 (ko)](README.ko.md) |
+[?�本�?(ja)](README.ja.md) |
+[?�국??(ko)](README.ko.md) |
 Português (pt-BR) |
 [Português (pt)](README.pt.md) |
-[Русский (ru)](README.ru.md) |
-[简体中文 (zh-CN)](README.zh-CN.md) |
-[繁體中文 (zh-TW)](README.zh-TW.md) |
+[????кий (ru)](README.ru.md) |
+[简体中??(zh-CN)](README.zh-CN.md) |
+[繁�?中�? (zh-TW)](README.zh-TW.md) |
 
 ## Visão geral
 
 O GitHub Action cria um calendário de contribuições do GitHub em uma imagem de perfil 3D.
 
-## Como usar (GitHub Actions) – Básico
+## Como usar (GitHub Actions) ??Básico
 
 O GitHub Action gera o seu calendário de contribuições 3D do GitHub e faz o commit no seu repositório. Depois de adicionar o GitHub Action, o workflow roda automaticamente uma vez ao dia. Você também pode executar o workflow manualmente.
 
@@ -70,7 +70,7 @@ jobs:
 ```
 
 > [!NOTE]
-> Você pode alterar as configurações da sua conta no GitHub para incluir contribuições de repositórios privados. Para mudar essa opção, clique em `Configurações de contribuição` no canto superior direito do calendário padrão de contribuições, ou clique no seu ícone no canto superior direito da tela, vá em `Configurações` ⇒ `Perfil público` ⇒ `Contribuições & Atividade`, e marque `Incluir contribuições privadas no meu perfil`.
+> Você pode alterar as configurações da sua conta no GitHub para incluir contribuições de repositórios privados. Para mudar essa opção, clique em `Configurações de contribuição` no canto superior direito do calendário padrão de contribuições, ou clique no seu ícone no canto superior direito da tela, vá em `Configurações` ??`Perfil público` ??`Contribuições & Atividade`, e marque `Incluir contribuições privadas no meu perfil`.
 >
 > Se você quiser incluir atividades adicionais de repositórios privados, registre um token de acesso pessoal como segredo e defina ele na variável de ambiente `GITHUB_TOKEN` dentro do arquivo de workflow. Porém, na maioria dos casos, o `secrets.GITHUB_TOKEN` padrão já é suficiente.
 
@@ -84,10 +84,10 @@ No exemplo, apenas `GITHUB_TOKEN` e `USERNAME` sestão definidos como variáveis
 
 - `GITHUB_TOKEN` : (obrigatório) token de acesso
 - `USERNAME` : (obrigatório) nome de usuário alvo (ou especifique como argumento).
-- `MAX_REPOS` : (opcional) número máximo de repositórios, padrão é 100 — desde a versão 0.2.0
-- `SETTING_JSON` : (opcional) caminho para o arquivo JSON de configurações. Veja `sample-settings/*.json` e `src/type.ts` no repositório `yoshi389111/github-profile-3d-contrib` para mais detalhes — desde a versão 0.6.0
-- `GITHUB_ENDPOINT` : (opcional) endpoint GraphQL do GitHub. Por exemplo, se você quiser criar o calendário de contribuições baseado no GitHub Enterprise da sua empresa em vez do GitHub.com, defina essa variável. Exemplo: `https://github.mycompany.com/api/graphql` — desde a versão 0.8.0
-- `YEAR` : (opcional) para gerar calendários de anos anteriores, especifique o ano. Essa opção é pensada principalmente para quando a ferramenta é executada via linha de comando — desde a versão 0.8.0
+- `MAX_REPOS` : (opcional) número máximo de repositórios, padrão é 100 ??desde a versão 0.2.0
+- `SETTING_JSON` : (opcional) caminho para o arquivo JSON de configurações. Veja `sample-settings/*.json` e `src/type.ts` no repositório `yoshi389111/github-profile-3d-contrib` para mais detalhes ??desde a versão 0.6.0
+- `GITHUB_ENDPOINT` : (opcional) endpoint GraphQL do GitHub. Por exemplo, se você quiser criar o calendário de contribuições baseado no GitHub Enterprise da sua empresa em vez do GitHub.com, defina essa variável. Exemplo: `https://github.mycompany.com/api/graphql` ??desde a versão 0.8.0
+- `YEAR` : (opcional) para gerar calendários de anos anteriores, especifique o ano. Essa opção é pensada principalmente para quando a ferramenta é executada via linha de comando ??desde a versão 0.8.0
 
 #### Sobre o `GITHUB_TOKEN`
 
@@ -116,7 +116,7 @@ Depois disso, defina esse segredo como valor da variável de ambiente `GITHUB_TO
 #### Sobre o horário do agendamento
 
 No exemplo, o início está definido para as 18:00 UTC.
-Isso porque esse horário corresponde à meia-noite no fuso horário JST, que é o fuso horário local do autor.
+Isso porque esse horário corresponde ? meia-noite no fuso horário JST, que é o fuso horário local do autor.
 
 ```yaml
 on:
@@ -153,31 +153,31 @@ Você pode usar essas imagens no seu README.md, como mostrado abaixo:
 
 Exemplo: versão verde
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
 
 Exemplo: versão de estação (Hemisfério Norte.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
 
 Exemplo: versão de estação (Hemisfério Sul.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
 
 Exemplo: versão visão noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
 
 Exemplo: versão verde noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
 
 Exemplo: versão arco-íris noturna
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
 
 Exemplo: versão git block
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 ### Passo 4. Adicione a imagem ao README.md
 

@@ -1,19 +1,19 @@
 # GitHub Profile 3D Contrib
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 <!-- Orden del código de idioma (excepto inglés) -->
 [English (en)](../README.md) |
 [Deutsch (de)](README.de.md) |
 Español (es) |
 [Français (fr)](README.fr.md) |
-[日本語 (ja)](README.ja.md) |
-[한국어 (ko)](README.ko.md) |
+[?�本�?(ja)](README.ja.md) |
+[?�국??(ko)](README.ko.md) |
 [Português (pt-BR)](README.pt-br.md) |
 [Português (pt)](README.pt.md) |
-[Русский (ru)](README.ru.md) |
-[简体中文 (zh-CN)](README.zh-CN.md) |
-[繁體中文 (zh-TW)](README.zh-TW.md) |
+[????кий (ru)](README.ru.md) |
+[简体中??(zh-CN)](README.zh-CN.md) |
+[繁�?中�? (zh-TW)](README.zh-TW.md) |
 
 > [!NOTE]
 > Esta traducción fue generada parcialmente por un traductor automático.
@@ -77,7 +77,7 @@ jobs:
 ```
 
 > [!NOTE]
-> Puedes cambiar la configuración de GitHub para incluir contribuciones de repositorios privados. Para cambiar esta configuración, haz clic en `Contribution settings` en la parte superior derecha del calendario de contribuciones estándar, o haz clic en tu icono en la parte superior derecha de la pantalla, selecciona `Settings` ⇒ `Public profile` ⇒ `Contributions & Activity`, y marca `Include private contributions on my profile`.
+> Puedes cambiar la configuración de GitHub para incluir contribuciones de repositorios privados. Para cambiar esta configuración, haz clic en `Contribution settings` en la parte superior derecha del calendario de contribuciones estándar, o haz clic en tu icono en la parte superior derecha de la pantalla, selecciona `Settings` ??`Public profile` ??`Contributions & Activity`, y marca `Include private contributions on my profile`.
 >
 > Si quieres incluir actividades adicionales de repositorios privados, registra un token de acceso personal como secreto y configúralo en la variable de entorno `GITHUB_TOKEN` en el archivo de workflow. Sin embargo, en la mayoría de los casos el valor predeterminado `secrets.GITHUB_TOKEN` es suficiente.
 
@@ -165,31 +165,31 @@ Puedes usar estas imágenes en tu README.md como se muestra a continuación.
 
 Ejemplo: versión green
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
 
 Ejemplo: versión season (hemisferio norte)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
 
 Ejemplo: versión season (hemisferio sur)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
 
 Ejemplo: versión night view
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
 
 Ejemplo: versión night green
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
 
 Ejemplo: versión night rainbow
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
 
 Ejemplo: versión git block
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
 ### Paso 4. Agregar imagen al README.md
 

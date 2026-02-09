@@ -1,19 +1,19 @@
 # GitHub Profile 3D Contrib
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-gitblock.svg)
 
 <!-- Language code order (except English) -->
 English (en) |
 [Deutsch (de)](docs/README.de.md) |
 [Español (es)](docs/README.es.md) |
 [Français (fr)](docs/README.fr.md) |
-[日本語 (ja)](docs/README.ja.md) |
-[한국어 (ko)](docs/README.ko.md) |
+[?�本�?(ja)](docs/README.ja.md) |
+[?�국??(ko)](docs/README.ko.md) |
 [Português (pt-BR)](docs/README.pt-br.md) |
 [Português (pt)](docs/README.pt.md) |
-[Русский (ru)](docs/README.ru.md) |
-[简体中文 (zh-CN)](docs/README.zh-CN.md) |
-[繁體中文 (zh-TW)](docs/README.zh-TW.md) |
+[????кий (ru)](docs/README.ru.md) |
+[简体中??(zh-CN)](docs/README.zh-CN.md) |
+[繁�?中�? (zh-TW)](docs/README.zh-TW.md) |
 
 <!--
 > [!NOTE]
@@ -45,41 +45,39 @@ In this repository, follow the steps below.
 
 Create a workflow file like the one below.
 
-- `.github/workflows/profile-3d.yml`
+- `.github/workflows/profile-3d-simplify.yml`
 
-```yaml:.github/workflows/profile-3d.yml
-name: GitHub-Profile-3D-Contrib
+```yaml:.github/workflows/profile-3d-simplify.yml
+name: GitHub-Profile-3D-Contrib-simplify
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
-    - cron: "0 18 * * *"
+  schedule: # 00:00 TW (UTC+8) == 16:00 UTC
+    - cron: "0 16 * * *"
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: generate-github-profile-3d-contrib-simplify
     steps:
-      - uses: actions/checkout@v5
-      - uses: yoshi389111/github-profile-3d-contrib@latest
+      - uses: actions/checkout@v3
+
+      - uses: Jung217/github-profile-3d-contrib-simplify@v0.0.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          if git commit -m "generated"; then
-            git push
-          fi
+          git commit -m "generated" || echo "No changes"
+          git push
 ```
 
 > [!NOTE]
-> You can change your GitHub settings to include contributions from private repositories. To change this setting, click `Contribution settings` in the top right of the standard contribution calendar, or click your icon in the top right of the screen, select `Settings` ⇒ `Public profile` ⇒ `Contributions & Activity`, and check `Include private contributions on my profile`.
+> You can change your GitHub settings to include contributions from private repositories. To change this setting, click `Contribution settings` in the top right of the standard contribution calendar, or click your icon in the top right of the screen, select `Settings` ??`Public profile` ??`Contributions & Activity`, and check `Include private contributions on my profile`.
 >
 > If you want to include additional activities from private repositories, register a personal access token as a secret and set it to the `GITHUB_TOKEN` environment variable in the workflow file. However, in most cases the default `secrets.GITHUB_TOKEN` is sufficient.
 
@@ -167,31 +165,31 @@ You can use these images in your README.md as shown below.
 
 Example: green version
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-green-animate.svg)
 
 Example: season version (Northern Hemisphere.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-season-animate.svg)
 
 Example: season version (Southern Hemisphere.)
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-south-season-animate.svg)
 
 Example: night view version
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-night-view.svg)
 
 Example: night green version
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-night-green.svg)
 
 Example: night rainbow version
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-night-rainbow.svg)
 
 Example: git block version
 
-![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+![svg](https://raw.githubusercontent.com/Jung217/github-profile-3d-contrib/main/profile-3d-contrib/profile-gitblock.svg)
 
 ### Step 4. Add image to README.md
 
