@@ -39,7 +39,7 @@ Create a workflow file like the one below.
         steps:
           - uses: actions/checkout@v3
     
-          - uses: Jung217/github-profile-3d-contrib-simplify@v0.1.0
+          - uses: Jung217/github-profile-3d-contrib-simplify@v0.1.1
             env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               USERNAME: ${{ github.repository_owner }}
